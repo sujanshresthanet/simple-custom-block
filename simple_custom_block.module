@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Simple custom block general hooks.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function simple_custom_block_theme($existing, $type, $theme, $path): array {
+	return [
+		'custom_block' => [
+			'variables' => [
+				'active_tab' => NULL,
+				'body_text' => NULL,
+				'tabs' => [],
+			],
+		],
+	];
+}
